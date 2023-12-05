@@ -4,7 +4,7 @@
     height: 100vh
     display: grid
     grid-template-columns: repeat(5, 1fr)
-    gap: 1rem
+    gap: 2rem
 
     &__box
         @include mixins.flex-center()
@@ -15,10 +15,14 @@
                 background-repeat: no-repeat
                 background-position: center
                 background-size: contain
+             
             
     &__number
         height: 100%
         aspect-ratio: 1/1
         border-radius: 50% 50% 0 0
-        background-color: white
+        background-image: url(../images/fond-paquet.jpg)
         @include mixins.flex-center()
+        background-size: cover
+        font-family: 'Nabla', serif
+        font-size: 3rem
