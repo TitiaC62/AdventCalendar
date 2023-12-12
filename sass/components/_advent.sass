@@ -24,5 +24,9 @@
         background-image: url(../images/fond-paquet.jpg)
         @include mixins.flex-center()
         background-size: cover
-        font-family:  serif
+        font-family: "nabla", serif
         font-size: 3rem
+        transition: opacity 0.5s ease-in
+
+        &.hide
+            opacity: 0
